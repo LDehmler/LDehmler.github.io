@@ -22,14 +22,14 @@ body{
     height:fit-content;
     width:1300px;
     font-size:32px;
-
+    margin-left:25px;
 }
 #companyName h1{
     vertical-align: bottom;
     position:relative;
     top:28px;
     left:50px;
-    font-family: 'Arial Narrow', Arial, Helvetica, sans-serif;
+    font-family: 'Michroma', sans-serif;
     font-weight:lighter;
     font-stretch: expanded;
 
@@ -41,12 +41,13 @@ body{
     font-stretch:narrower;
     height:fit-content;
     width:1300px;
+    margin-left:25px;
 }
 
 #companySlogan h2{
     position:relative;
     top:-17px;
-    left:76px;
+    left:51px;
     font-family: monospace;
     border-top:1px solid white;
 
@@ -55,7 +56,7 @@ body{
 .main{
     background-color:#F8A794;
     width:1300px;
-    height:600px;
+    height:660px;
     position:relative;
     left:75.665px;
     box-shadow: 20px 20px 60px black;
@@ -66,7 +67,7 @@ body{
 .secondColor{
     background-color: rgb(139, 26, 26);
     width: 500px;
-    height:600px;
+    height:660px;
     position:absolute;
     left:800px;
    
@@ -93,7 +94,18 @@ li{
     margin:0 5px;
 }
 
+a{
+  color: white;
+  text-decoration: none;  
+}
 
+a:hover{
+    color:black;
+}
+
+a:active{
+    color:#78221c;
+}
 
 #logo{
     height:5px;
@@ -109,7 +121,7 @@ img{
 }
 
 #promotion{
-    width:500px;
+    width:590px;
     position:relative;
     top:100px;
     padding:0 30px;
@@ -117,24 +129,25 @@ img{
 
 .text {
     color:white;
-    font-family: 'Arial Narrow', Arial, 'Franklin Gothic Medium', sans-serif;
-    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 19px;
 }
 
 .promoHook{
     text-align:center;
     padding:0 30px;
     height:60px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 34px;
+    font-family: 'Monoton', cursive;
+    font-size: 32px;
     position:relative;
-    top:-40px;
+    top:-84px;
     
 }
 
 .infoBlurb{
     position:relative;
-    top:-30px;
+    top:-49px;
+    text-align: right;
 }
 
 .portrait{
@@ -152,12 +165,28 @@ img{
 
 .button{
 position:relative;
-left:130px;
-top:-20px;
+left:230px;
+top:-10px;
+
 }
 
 button{
     border-radius: 8px;
-    background-color: #BE544D;
-    color:white;
+    background-color:#fad8cf;
+    border:#fad8cf;
+    margin: 0 10px;
+    font-size: 16px;
+    color:#240502;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+button:hover{
+    background-color: #78221c;
+    color:#dac3c1
+}
+
+button:active{
+    background-color:#BE544D;
+    color: #fff;
 }
