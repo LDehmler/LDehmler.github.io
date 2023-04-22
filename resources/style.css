@@ -1,185 +1,85 @@
+
+/*Global*/
 *{
     margin:0;
-    text-decoration: none;
 }
 
-#link-banner {
+body{
+    background-image: url("blackRain.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     display: flex;
-    flex-wrap:wrap;
-    background-color:#2d539a;
-    justify-content: center;
-    padding: 15px;
+    flex-wrap: wrap;
+}
+
+/*Banner*/
+header{
+    background-color: #8c1c13;
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 350px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+header img{
+    flex: 0 2 300px;
+    display: flex;
+    max-height: inherit;
+    min-width: 0;
+}
+
+h1{
+    font-family: 'Silkscreen', cursive;
+    display: flex;
+    flex: 0 1 300px;
+    align-content: center;
+    flex-wrap: wrap;
+    text-align: right;
 }
 
 ul{
+    display: flex;
+    flex: 0.1 2 250px;
     list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    line-height: 2;
-}
-
-#link-banner a{
-    color: white;
     font-family: 'Merriweather', serif;
-    font-size:18px;
-    margin:0 20px;
-    text-decoration: none;
-}
-
-#logo-banner{
-    display:flex;
-    flex-wrap:wrap;
-    background-image:url("Slide-RecTrail.jpg");
-    background-size: cover;
-    justify-content: center;
-    min-height: 300px;
-    align-content: center;
-}
-
-#logo-banner h1{
-    font-family: 'Yellowtail', cursive;
-    color: white;
-    font-size: 90px;
-    display:flex;
-    flex-wrap:wrap;
-    text-shadow: 0 0 8px black;
-}
-
-#quick-links{
-    display: flex;
-    flex-wrap:wrap;
-    background-color:#2d539a;
-    justify-content: center;
-    padding: 15px;
-}
-
-#quick-links a{
-    color: white;
-    font-family: 'Merriweather', serif;
-    font-size:18px;
-    margin:0 10px;
-    text-decoration: none;
-}
-
-#grid-container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas:"main-container main-container sidebar";
-
-}
-
-#main-container{
-    display: flex;
+    align-content: flex-end;
+    justify-content:space-around;
     flex-wrap: wrap;
-    border: 1px solid black;
+    padding-bottom: 8px 0;
+
+}
+
+a{
+    text-decoration: none;
+    color: #e7d7c1;
+}
+
+/*Main Body - Images*/
+#main{
+    display: flex;
+    flex-wrap:wrap;
     justify-content: space-evenly;
-    margin: 10px 5px;
-    padding: 8px;
-    grid-area: main-container;
-   
+    padding: 100px;
 }
 
-.main{
+.image-surround{
+    padding: 15px 10px;
+    margin: 30px;
     display: flex;
-    flex-wrap: wrap;
-    width: 300px;
-    height: 570px;
-    padding: 10px;
+    flex: 0 1 300px;
+    max-width: 300px;
+    background-color: #a78a7f;
+}
+
+.image-surround img{
+    object-fit: contain;
+    max-width:100%;
+}
+
+.image-surround a{
     font-family: 'Merriweather', serif;
-    justify-content: center;
-    align-content: center;
-    margin: 8px;
-
-
-    border: 1px solid black;
-}
-
-.main h2{
-    display: flex;
-    flex-wrap:wrap;
-    align-content: center;
-    justify-content: center;
-    margin:5px;
-    width: 100%;
-}
-
-.img-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    width:250px;
-    height:300px;
-    margin: 5px;
-    box-shadow:3px 2px 15px;
-    padding: 10px;
-}
-
-.main img{
-    display: flex;
-    max-width:220px;
-    max-height:300px;
-
-}
-
-.description{
-    display: flex;
-    text-align: center;
-    max-width:250px;
-    height: 160px;
-    padding: 5px;
-    margin-top: 10px;
-}
-
-.description a{
-    font-style:italic;
-}
-
-.description a:hover{
-    text-decoration:underline;
-}
-
-.description a:active{
-    opacity: 0.4;
-}
-
-.sidebar{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    grid-area: sidebar;
-    padding-top: 10px;
-    background-color: #82aa53;
-    justify-content: center;
-    align-content: flex-start;
-}
-
-.sidebar h2{
-    text-align: center;
-    color: white;
-    margin: 10px 0;
-}
-
-.sidebar ol, .sidebar p{
-    color: white;
-    margin: 10px;
-    letter-spacing: .7px;
-
-}
-
-
-/*about page*/
-.main-about h2{
-    font-family:'Merriweather', serif;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 8px 0;
-}
-.main-about p{
-    font-family:'Merriweather', serif;
-    padding: 10px;
     display: flex;
     flex-wrap: wrap;
 }
