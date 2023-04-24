@@ -1,85 +1,87 @@
-
-/*Global*/
 *{
-    margin:0;
+    border:0;
 }
 
-body{
-    background-image: url("blackRain.jpg");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-wrap: wrap;
+html{
+    font-size: 18px;
+    color:#494646;
 }
 
-/*Banner*/
-header{
-    background-color: #8c1c13;
-    display: flex;
-    flex-wrap: wrap;
-    max-height: 350px;
+.container{
+    display: grid;
     width: 100%;
-    justify-content: space-between;
+    background-color:beige;
+    grid-template-areas:"header header" "nav-banner nav-banner" 
+    "main main" "footer footer";
+    grid-template-rows: 200px 50px 700px 150px;
+    grid-template-columns: 1fr 1fr;
 }
 
-header img{
-    flex: 0 2 300px;
+header{
+    grid-area: header;
     display: flex;
-    max-height: inherit;
-    min-width: 0;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
 }
 
 h1{
-    font-family: 'Silkscreen', cursive;
-    display: flex;
-    flex: 0 1 300px;
-    align-content: center;
-    flex-wrap: wrap;
-    text-align: right;
+    font-size: 2.2rem;
+    letter-spacing: .6rem;
+    text-align: center;
+}
+
+#nav-banner{
+    grid-area: nav-banner;
+    background-color:paleturquoise;
 }
 
 ul{
-    display: flex;
-    flex: 0.1 2 250px;
     list-style: none;
-    font-family: 'Merriweather', serif;
-    align-content: flex-end;
-    justify-content:space-around;
+    display: flex;
     flex-wrap: wrap;
-    padding-bottom: 8px 0;
 
 }
 
-a{
+ul a{
+    font-size: .7rem;
     text-decoration: none;
-    color: #e7d7c1;
+    margin: 0 10px;
+    color:#494646;
+    letter-spacing: .9px;
 }
 
-/*Main Body - Images*/
 #main{
+    grid-area: main;
+    width:100%;
     display: flex;
-    flex-wrap:wrap;
-    justify-content: space-evenly;
-    padding: 100px;
 }
 
-.image-surround{
-    padding: 15px 10px;
-    margin: 30px;
-    display: flex;
-    flex: 0 1 300px;
-    max-width: 300px;
-    background-color: #a78a7f;
+.content{
+    height: 40%;
+    width:200px;
+    margin: 5%;
 }
 
-.image-surround img{
-    object-fit: contain;
-    max-width:100%;
-}
+ img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+ }
 
-.image-surround a{
-    font-family: 'Merriweather', serif;
+
+footer{
+    grid-area: footer;
+    background-color:gainsboro;
     display: flex;
     flex-wrap: wrap;
+    align-content: center;
 }
+
+h3{
+    margin-left: 5%;
+    font-size: .8rem;
+    letter-spacing: .9px;
+
+}
+
